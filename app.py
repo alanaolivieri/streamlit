@@ -32,7 +32,21 @@ if st.button('Enviar'):
     # Mostramos el resultado
     predict = best_model_RF.predict(input_data)[0]
 
-    if predict == 0:
-        st.text('No sobreviviente')
+    if predict == 1:
+        st.markdown(
+            """
+            <div style="background-image: url('https://cdn.aarp.net/content/aarpe/es/home/entretenimiento/cine-y-television/info-2022/anecdotas-fotos-videos-pelicula-titanic/_jcr_content/root/container_main/container_body_main/container_body2/container_body_cf/body_two_cf_one/par14/articlecontentfragme/cfimage.coreimg.50.932.jpeg/content/dam/aarp/entertainment/movies-for-grownups/2022/12/1140-titanic-set-esp.jpg'); height: 100vh; background-size: cover;">
+                <h1 style="color: white;">¡Eres un Sobreviviente!</h1>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
     else:
-        st.text('Sobreviviente')
+        st.markdown(
+            """
+            <div style="background-image: url('https://media.vandalsports.com/i/640x360/7-2023/20237516291_1.jpg.webp'); height: 100vh; background-size: cover;">
+                <h1 style="color: white;">No eres un Sobreviviente.</h1>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
