@@ -20,5 +20,5 @@ Para la creación del Modelo se emplea Pipeline, es una secuencia de procesos qu
 También nos permite que, cuando llevemos nuestro modelo a producción, aseguremos el tratamiento de los valores perdidos y el preprocesado de cada columna de la misma manera que se aplicó para los datos de entrenamiento.
 
 Ejecución: 
-- Para poner nuestro modelo en producción creamos una simple aplicación que permite la entrada de la información por parte del usuario y esta le responde si sobrevive o no al titanic. Ejecutamos en el terminal: streamlit run app.py 
-- Hacemos un simple dashboard para mostrar las visualizaciones que hemos realizado en nuestro notebook. Tenemos gráficos con plotly express, matplotlib, seaborn y matriz de confusion. Ejecutamos en el terminal: streamlit run viz.py
+- Para poner nuestro modelo en producción creamos una simple aplicación que permite la entrada de la información por parte del usuario y esta le responde si sobrevive o no al titanic. Ejecutamos en el terminal desde la carpeta scr: streamlit run app.py 
+- Hacemos un simple dashboard para mostrar las visualizaciones que hemos realizado en nuestro notebook. Tenemos gráficos con plotly express, matplotlib, seaborn y matriz de confusion. Ejecutamos en el terminal desde la carpeta scr: streamlit run viz.py
