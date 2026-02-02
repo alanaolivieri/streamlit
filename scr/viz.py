@@ -84,6 +84,6 @@ cm = confusion_matrix(df_y['y_test'], df_y['y_pred_best'])
 disp = ConfusionMatrixDisplay(confusion_matrix=cm)
 
 fig, ax = plt.subplots()
-disp.plot(ax=ax)
+disp.plot(ax=ax)    
 st.pyplot(fig)
 
