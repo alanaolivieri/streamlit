@@ -3,7 +3,7 @@ import streamlit as st
 
 from joblib import load
 
-best_model_RF = load('../models/best_model.joblib')
+best_model = load('../models/best_model.joblib')
 df = load('../data/processed/datos.df')
 
 st.title('Predicción de Supervivencia en el Titanic')
@@ -24,7 +24,7 @@ if st.button('Enviar'):
     input_data = pd.DataFrame([[passenger_id, pclass, name, sex, age, sibsp, parch, ticket, fare, cabin, embarked]],
                                columns=['PassengerId', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp', 'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked'])
 
-    predict = best_model_RF.predict(input_data)[0]
+    predict = best_model.predict(input_data)[0]
 
     if predict == 1:
         st.markdown(
