@@ -45,3 +45,5 @@ Streamlit Cloud instalará las dependencias indicadas en ``requirements.txt`` y 
 ### Actualizar la aplicación
 
 Cada vez que se hagan cambios en el código, se deben subir a GitHub, Streamlit Cloud detectará los cambios del repositorio y actualizará la aplicación automáticamente.
+
+[Sobrevivimos?](https://sobrevimos-titanic.streamlit.app/)
