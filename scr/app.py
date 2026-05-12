@@ -2,9 +2,16 @@ import pandas as pd
 import streamlit as st
 
 from joblib import load
+from pathlib import Path
 
-best_model = load('../models/best_model.joblib')
-df = load('../data/processed/datos.df')
+BASE_DIR = Path(__file__).resolve().parent
+ROOT_DIR = BASE_DIR.parent
+
+best_model = load(ROOT_DIR / 'models' / 'best_model.joblib')
+df = load(ROOT_DIR / 'data' / 'processed' / 'datos.df')
+
+# best_model = load('../models/best_model.joblib')
+# df = load('../data/processed/datos.df')
 
 st.title('Predicción de Supervivencia en el Titanic')
 
