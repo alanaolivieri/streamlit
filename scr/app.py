@@ -13,7 +13,7 @@ df = load(ROOT_DIR / 'data' / 'processed' / 'datos.df')
 # best_model = load('../models/best_model.joblib')
 # df = load('../data/processed/datos.df')
 
-st.title('Predicción de Supervivencia en el Titanic')
+st.title('Sobrevivimos en el Titanic?')
 
 passenger_id = st.number_input('PassengerId:', min_value=df.PassengerId.max()+1, step=1)
 pclass = st.selectbox('Pclass:', sorted(df.Pclass.unique()))
